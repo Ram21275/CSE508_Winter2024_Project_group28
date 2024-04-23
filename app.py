@@ -79,8 +79,8 @@ model = load_model('./Stock Predictions Model.keras')
 st.title('Multi-Modal Stock Information Retrival and Prediction')
 
 stock =st.text_input('Enter Stock Symbol', 'GOOG')
-start = '2012-01-01'
-end = '2022-12-31'
+start = '2024-01-01'
+end = '2024-04-22'
 display_reddit_posts_and_comments()
 data = yf.download(stock, start ,end)
 
